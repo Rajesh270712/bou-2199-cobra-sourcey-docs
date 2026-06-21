@@ -2,6 +2,9 @@
   "bounty_id": "BOU-2199",
   "bounty_url": "https://gofrantic.com/bounties/46",
   "summary": "Sourcey generated and publicly hosted documentation for spf13/cobra, a maintained Apache-2.0 Go library, with runx 0.6.6 validation evidence, a GitHub Pages URL returning HTTP 200, and retained artifact metadata for Frantic bounty #46 redelivery.",
+  "artifact_summary": {
+    "summary": "Sourcey generated and publicly hosted documentation for spf13/cobra, a maintained Apache-2.0 Go library, with runx 0.6.6 validation evidence, a GitHub Pages URL returning HTTP 200, and retained artifact metadata for Frantic bounty #46 redelivery."
+  },
   "observations": [
     "The target project is spf13/cobra at commit ad460ea8f249db69c943a365fb84f3a59042d54e, recorded as a Go ecosystem library with Apache-2.0 license metadata.",
     "The Sourcey build produced 35 generated files and 15 HTML pages, including index.html, readme.html, completion pages, documentation generation pages, and user guide pages.",
@@ -12,6 +15,18 @@
     "The evidence records the Sourcey adapter, sourcey.config.ts path, build command, output directory, runx version, public hosting repository, and known validation gap.",
     "No Frantic payout, KYC, tax, private identity, or secret values are included in this evidence artifact."
   ],
+  "evidence_items": {
+    "observations": [
+      "The target project is spf13/cobra at commit ad460ea8f249db69c943a365fb84f3a59042d54e, recorded as a Go ecosystem library with Apache-2.0 license metadata.",
+      "The Sourcey build produced 35 generated files and 15 HTML pages, including index.html, readme.html, completion pages, documentation generation pages, and user guide pages.",
+      "The generated documentation covers at least 24 Cobra API and usage concepts, including commands, flags, shell completions, active help, Markdown docs, ReStructuredText docs, YAML docs, and man pages.",
+      "The public GitHub Pages root URL was verified as HTTP 200 and checked for generated navigation and content markers such as sourcey-search, nav-link, and Generating shell completions.",
+      "A nested generated documentation page was also verified publicly at the docgen path, showing that the published site is more than a landing page.",
+      "The retained runx validation receipt is runx:receipt:sha256:c16f1ca23de55a1fb8922a8f038eb21f5839deacd64bc84be361873f8cb321ab and records a sealed cli-tool validation run.",
+      "The evidence records the Sourcey adapter, sourcey.config.ts path, build command, output directory, runx version, public hosting repository, and known validation gap.",
+      "No Frantic payout, KYC, tax, private identity, or secret values are included in this evidence artifact."
+    ]
+  },
   "config_path": "artifacts/bountyops-control/BOU-2199-sourcey-cobra/sourcey.config.ts",
   "frantic_bounty": 46,
   "frantic_issue": "https://github.com/auscaster/frantic-board/issues/97",

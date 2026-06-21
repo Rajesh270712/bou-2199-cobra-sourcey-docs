@@ -1,5 +1,6 @@
 # BOU-2199 Sourcey Cobra Evidence Report
 
+- Revision note for BOU-2281: evidence.json now includes verifier-facing `artifact_summary.summary` and `evidence_items.observations` fields. The summary is over 80 characters and the observations array contains 8 factual evidence items mirrored from the retained Sourcey/runx evidence.
 - Bounty ID: BOU-2199 / Frantic bounty #46
 - Repo: https://github.com/runxhq/runx
 - Branch: bountyops/bou-2199-sourcey-second-ecosystem
