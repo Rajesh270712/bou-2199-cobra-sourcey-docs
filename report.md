@@ -1,0 +1,78 @@
+# BOU-2199 Sourcey Cobra Evidence Report
+
+- Bounty ID: BOU-2199 / Frantic bounty #46
+- Repo: https://github.com/runxhq/runx
+- Branch: bountyops/bou-2199-sourcey-second-ecosystem
+- Issue URL: https://github.com/auscaster/frantic-board/issues/97
+- Assignment comment state if known: no public assignment comment found; Frantic claim gate observed open with 1/1 open slot, 0 active, 0 delivered, 0 accepted
+- Issue reproduced: Yes, bounty acceptance criteria and open-gate state were checked before work; generated docs artifact satisfies local static output criteria and now has a verified public URL
+- Test added: Yes, a task-local runx cli-tool validation skill was added under retained evidence to rebuild and verify the Sourcey artifact
+- Files changed:
+  - artifacts/bountyops-control/BOU-2199-sourcey-cobra/sourcey.config.ts
+  - artifacts/bountyops-control/BOU-2199-sourcey-cobra/site/
+  - artifacts/bountyops-control/BOU-2199-sourcey-cobra/evidence.json
+  - artifacts/bountyops-control/BOU-2199-sourcey-cobra/validation-run-output.json
+  - artifacts/bountyops-control/BOU-2199-sourcey-cobra/receipts/
+  - artifacts/bountyops-control/BOU-2199-sourcey-cobra/validation-skill/
+- Commands run:
+  - gh api repos/auscaster/frantic-board/issues/97
+  - gh api repos/auscaster/frantic-board/issues/97/comments
+  - gh api search/issues -f q='repo:auscaster/frantic-board is:pr 97'
+  - gh repo clone runxhq/runx attempts/BOU-2199-runx/runx
+  - git checkout -b bountyops/bou-2199-sourcey-second-ecosystem
+  - git config user.name 'Rajesh Digambar Bagul'
+  - git config user.email '102693488+Rajesh270712@users.noreply.github.com'
+  - pnpm install
+  - pnpm build
+  - pnpm cli:link-dev-native
+  - runx --version
+  - npm install --prefix .. sourcey@3.6.3
+  - gh api repos/spf13/cobra
+  - gh repo clone spf13/cobra attempts/BOU-2199-runx/targets/cobra
+  - git checkout ad460ea8f249db69c943a365fb84f3a59042d54e
+  - ../../node_modules/.bin/sourcey build -o .sourcey/runx-docs --quiet
+  - runx skill artifacts/bou-2199/sourcey-cobra-validation ... -R artifacts/bou-2199/receipts-pass --json
+  - npm install
+  - npm run build
+  - curl -sSI http://127.0.0.1:3097/
+  - curl -sS http://127.0.0.1:3097/index.html
+  - curl -sS http://127.0.0.1:3097/site/content/docgen/md.html
+  - gh repo create Rajesh270712/bou-2199-cobra-sourcey-docs --public ...
+  - gh api -X POST repos/Rajesh270712/bou-2199-cobra-sourcey-docs/pages ...
+  - curl -L https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/
+  - curl -L https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/site/content/docgen/md.html
+- Passing tests:
+  - pnpm build passed in runx
+  - runx --version returned runx-cli 0.6.6
+  - Sourcey direct build produced 15 HTML pages and 35 generated files
+  - runx validation skill sealed successfully with receipt sha256:c16f1ca23de55a1fb8922a8f038eb21f5839deacd64bc84be361873f8cb321ab
+  - evidence.json records 24 covered concepts
+  - GitHub Pages public URL returned HTTP 200 for the root and nested generated Markdown docs page
+- Failing tests:
+  - Official Sourcey runx graph path did not complete; discovery approval output stayed null and a later seeded fixture path failed on fs.write_bundle resolution
+- Reason for failures if any:
+  - The official graph path appears blocked by local answer/tool resolution behavior unrelated to the generated Sourcey static artifact. The retained validation path uses runx 0.6.6 cli-tool execution and a deterministic Sourcey build/verification script.
+- Patch explanation:
+  - Selected spf13/cobra as a maintained Apache-2.0 Go library, distinct from the known Python/JavaScript Sourcey documentation surface.
+  - Added a Sourcey config that maps Cobra README and site/content documentation into navigable Sourcey pages.
+  - Generated and retained a static docs site with navigation, search index, llms files, source-mapped pages, and Open Graph assets.
+  - Recorded runx receipt and structured evidence for QA/CTO review.
+- Public URL:
+  - https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/
+- Hosting:
+  - Provider: GitHub Pages
+  - Repo: https://github.com/Rajesh270712/bou-2199-cobra-sourcey-docs
+  - Commit: d9de94660f6e4ce7b2f48de53b755fc865860a45
+- Risk notes:
+  - Receipt uses the documented runx demo signer for local validation, not a production trusted signing key.
+  - No public Frantic comment, claim, delivery, or PR was posted by Patch.
+- Ready for QA: Yes. Public hosting is approved and the GitHub Pages URL returned HTTP 200 for a stranger-style curl check; QA still needs to independently verify the public URL and artifact evidence before any Frantic delivery.
+
+## Retained Evidence
+
+- Site: artifacts/bountyops-control/BOU-2199-sourcey-cobra/site/
+- Public URL: https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/
+- Evidence JSON: artifacts/bountyops-control/BOU-2199-sourcey-cobra/evidence.json
+- Receipt JSON: artifacts/bountyops-control/BOU-2199-sourcey-cobra/receipts/sha256:c16f1ca23de55a1fb8922a8f038eb21f5839deacd64bc84be361873f8cb321ab.json
+- Validation output: artifacts/bountyops-control/BOU-2199-sourcey-cobra/validation-run-output.json
+- Sourcey config: artifacts/bountyops-control/BOU-2199-sourcey-cobra/sourcey.config.ts

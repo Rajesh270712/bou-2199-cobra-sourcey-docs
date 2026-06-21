@@ -1,0 +1,144 @@
+{
+  "bounty_id": "BOU-2199",
+  "bounty_url": "https://gofrantic.com/bounties/46",
+  "config_path": "artifacts/bountyops-control/BOU-2199-sourcey-cobra/sourcey.config.ts",
+  "frantic_bounty": 46,
+  "frantic_issue": "https://github.com/auscaster/frantic-board/issues/97",
+  "gaps": [
+    "This run uses the documented runx demo signer for local validation evidence, not a production trusted signing key."
+  ],
+  "generation": {
+    "adapter": "sourcey config markdown",
+    "command_config": {
+      "build_command": "/Users/rajesh/.paperclip/instances/default/projects/8fc3cb03-a348-4337-8780-a01ef297311f/ae31988d-66c3-4491-91dc-b655b1ab4149/_default/attempts/BOU-2199-runx/node_modules/.bin/sourcey build -o .sourcey/runx-docs-receipt --quiet",
+      "config": "sourcey.config.ts",
+      "output_dir": ".sourcey/runx-docs-receipt",
+      "runx_version": "runx-cli 0.6.6",
+      "sourcey_version_command": "/Users/rajesh/.paperclip/instances/default/projects/8fc3cb03-a348-4337-8780-a01ef297311f/ae31988d-66c3-4491-91dc-b655b1ab4149/_default/attempts/BOU-2199-runx/node_modules/.bin/sourcey --help"
+    },
+    "concepts_covered": [
+      "Command",
+      "Flags",
+      "Persistent Flags",
+      "Local Flags",
+      "PreRun",
+      "PostRun",
+      "Shell Completions",
+      "Active Help",
+      "Markdown Docs",
+      "ReStructured Text Docs",
+      "Yaml Docs",
+      "Man Pages",
+      "Bash",
+      "Zsh",
+      "fish",
+      "PowerShell",
+      "DisableAutoGenTag",
+      "InitDefaultCompletionCmd",
+      "completion command",
+      "argument",
+      "help",
+      "usage",
+      "aliases",
+      "suggestions"
+    ],
+    "generated_file_count": 35,
+    "html_page_count": 15,
+    "index_headings": [
+      "Overview",
+      "Warp, the AI terminal for devs",
+      "Overview",
+      "Concepts",
+      "Commands",
+      "Flags",
+      "Installing",
+      "Usage",
+      "License"
+    ],
+    "page_list": [
+      "index.html",
+      "readme.html",
+      "site/content/active-help.html",
+      "site/content/completions/bash.html",
+      "site/content/completions/fish.html",
+      "site/content/completions/index.html",
+      "site/content/completions/powershell.html",
+      "site/content/completions/zsh.html",
+      "site/content/docgen/index.html",
+      "site/content/docgen/man.html",
+      "site/content/docgen/md.html",
+      "site/content/docgen/rest.html",
+      "site/content/docgen/yaml.html",
+      "site/content/projects-using-cobra.html",
+      "site/content/user-guide.html"
+    ]
+  },
+  "public_url": "https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/",
+  "public_url_status": "verified_public_http_200",
+  "public_url_verified_at": "2026-06-21T06:39:55Z",
+  "public_hosting": {
+    "provider": "GitHub Pages",
+    "repo": "https://github.com/Rajesh270712/bou-2199-cobra-sourcey-docs",
+    "commit": "d9de94660f6e4ce7b2f48de53b755fc865860a45",
+    "commit_url": "https://github.com/Rajesh270712/bou-2199-cobra-sourcey-docs/commit/d9de94660f6e4ce7b2f48de53b755fc865860a45",
+    "pages_status": "built",
+    "verification": {
+      "root_status": "HTTP 200",
+      "root_contains": [
+        "Overview - Cobra",
+        "sourcey-search",
+        "nav-link",
+        "Generating shell completions"
+      ],
+      "generated_reference_url": "https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/site/content/docgen/",
+      "generated_reference_contains": [
+        "Documentation generation - Cobra",
+        "sourcey.js"
+      ],
+      "search_index_entries": 101
+    }
+  },
+  "receipt_id": "sha256:c16f1ca23de55a1fb8922a8f038eb21f5839deacd64bc84be361873f8cb321ab",
+  "receipt_path": "artifacts/bountyops-control/BOU-2199-sourcey-cobra/receipts/sha256:c16f1ca23de55a1fb8922a8f038eb21f5839deacd64bc84be361873f8cb321ab.json",
+  "receipt_ref": "runx:receipt:sha256:c16f1ca23de55a1fb8922a8f038eb21f5839deacd64bc84be361873f8cb321ab",
+  "report_path": "artifacts/bountyops-control/BOU-2199-sourcey-cobra/report.md",
+  "runx": {
+    "closure": {
+      "closed_at": "2026-06-21T04:07:15.462Z",
+      "disposition": "closed",
+      "reason_code": "process_closed",
+      "summary": "cli-tool validate completed"
+    },
+    "issuer": {
+      "kid": "runx-demo-key",
+      "public_key_sha256": "sha256:3097e2dee2cb4a34b53840cdb705aed71067c36f68db0e0f559c3f3fa043315f",
+      "type": "hosted"
+    },
+    "run_id": "run_validate_c7778dedb634",
+    "signer_note": "documented runx demo signer used for local validation",
+    "skill_name": "bou-2199-sourcey-cobra-validation",
+    "status": "sealed"
+  },
+  "schema": "bountyops.sourcey_evidence.v1",
+  "site_path": "artifacts/bountyops-control/BOU-2199-sourcey-cobra/site",
+  "target": {
+    "commit": "ad460ea8f249db69c943a365fb84f3a59042d54e",
+    "ecosystem": "Go",
+    "license": "Apache-2.0",
+    "repo": "https://github.com/spf13/cobra"
+  },
+  "validation_output_path": "artifacts/bountyops-control/BOU-2199-sourcey-cobra/validation-run-output.json",
+  "hosting": {
+    "provider": "GitHub Pages",
+    "repo": "https://github.com/Rajesh270712/bou-2199-cobra-sourcey-docs",
+    "commit": "d9de94660f6e4ce7b2f48de53b755fc865860a45",
+    "source_branch": "main",
+    "source_path": "/",
+    "verified_at": "2026-06-21T06:37:55Z",
+    "verification": {
+      "root_status": 200,
+      "nested_page_status": 200,
+      "nested_page": "https://rajesh270712.github.io/bou-2199-cobra-sourcey-docs/site/content/docgen/md.html"
+    }
+  }
+}
